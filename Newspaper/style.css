@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital@0;1&family=Rozha+One&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+}
+
+.text-center{
+  text-align: center;
+  font-family: 'Rozha One', serif;
+  color: #383333;
+}
+
+
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 1rem 0 0.5rem;
+}
+
+.logo i{
+  font-size: 2.5rem;
+  margin-right: 1rem;
+}
+
+time{
+  font-family: 'Rozha One', serif;
+  font-weight: bold;
+  color:#2b2a2a;
+  margin-right: 1rem;
+}
+
+.container{
+  margin: 0 auto;
+  width: 1000px;
+  padding: 1rem;
+  max-width: 100%;
+}
+
+nav{
+  border-top: 2px solid #c4c4c4;
+  border-bottom:2px solid #c4c4c4;
+  margin: 1rem 0;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav a {
+  color: #2b2a2a;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: 'Arvo', serif;
+  text-decoration: none;
+}
+
+.row{
+  display: flex;
+}
+
+.col{
+  padding: 0 1.5rem;
+  flex: 1;
+}
+
+.col:not(:last-child){
+  border-right: 2px solid #c4c4c4;
+}
+
+img{
+  max-width: 100%;
+}
+
+main h3{
+  font-family: 'Arvo', serif;
+  margin-top:0;
+}
+
+main p{
+  font-family: 'Arvo', serif;
+  color: #333232;
+  line-height: 1.35rem;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px){
+    .row{
+      flex-direction: column;
+    }
+
+    .col:not(:last-child){
+      border-right: none;
+      border-bottom: 2px solid #c4c4c4;
+    }
+
+    main h3{
+      margin-top: 2rem;
+    }
+    
+    
+}
